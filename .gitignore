@@ -1,0 +1,46 @@
+# Precomputed ledgers stay local. Re-run the scripts to reproduce them.
+results/
+**/results/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and cloud keys
+.env
+.env.*
+*.pem
+*.p12
+*credentials*.json
+*service-account*.json
+*service_account*.json
+*-key.json
+gcp-key*.json
+application_default_credentials.json
+**/adc.json
+
+# Manuscript trees do not belong in this mirror
+*.tex
+*.bib
+*.pdf
+figure_prompts.txt
+*.vsdx
+*.pptx
+
+# Editor, OS, sync junk
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~$*
+~$*
+*.tmp
+*.bak
